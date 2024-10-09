@@ -1,0 +1,79 @@
+.transaction-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.search-and-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.search-input,
+.month-select,
+.year-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 300px; /* Limit width on larger screens */
+    margin: 5px; /* Add some margin */
+}
+
+transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: black;
+}
+
+.transaction-table th {
+  background-color: #f2f2f2;
+}
+
+.charts {
+    margin: 20px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add some spacing above pagination */
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #f4b400;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #c89e00; /* Darken on hover */
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed; /* Show disabled cursor */
+}
+
+.pagination span {
+    margin: 0 10px;
+}
